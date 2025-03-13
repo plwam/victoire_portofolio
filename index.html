@@ -1,0 +1,343 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <link rel="stylesheet" href="https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css">
+  <title>Portfolio - Victoire Bulora</title>
+  <script src="https://cdn.tailwindcss.com"></script>
+  <script>
+    tailwind.config = {
+      theme: {
+        extend: {
+          colors: {
+            primary: "#1E293B", 
+            secondary: "#64748B",
+            accent: "#06b6d4",
+            titre:"#ffac26",
+            titre_2:"#2688ff",
+            titre_1:"#515150",
+            titre_3:"rgb(96, 95, 95)",
+            ombee:"box-shadow: 2px 2px 2px #fff"
+          }
+        }
+      }
+    }
+  </script>
+  <style>
+    .lista li img {
+        width: 110px;
+        height: 100px;
+        object-fit: cover;
+        border-radius: 5px;
+    }
+    .btn:hover{
+        margin-top: 10px;
+        padding: 10px;
+        background: #7f6234;
+        border-radius: 10px;
+    }
+    .btn{
+        margin-top: 10px;
+        padding: 10px;
+        background: #ffac26;
+        border-radius: 10px;
+        box-shadow: 2px 2px 2px #fff;
+    }
+    .welcome{
+        color: #db982c;
+    }
+    .galerie {
+
+        padding: 40px;
+       display: flex;
+    }
+    .galerie img{
+        width: 250px;
+        height: 400px;
+        object-fit: cover;
+        border-radius: 5px;
+        margin: 20px;
+    }
+  </style>
+</head>
+<body class="bg-gray-100 text-gray-900">
+
+  <!-- Header -->
+  <header class="relative  from-primary to-gray-800 flex flex-col items-center justify-center text-white" style="background-image: url('bg2.jpg'); height:100vh;">
+    <div class="w-40 h-40 rounded-full   overflow-hidden">
+      <img src="profi.jpg" alt="Victoire Bulora" class="w-full h-full " />
+    </div>
+<center>    <h1 class="text-4xl font-bold mt-4"> <span class="welcome">Bienvenue sur la page de</span> Victoire Bulora</h1>
+</center>
+    <p class="text-lg text-gray-300 text-center px-4">
+      Étudiant en Génie Civil | Gestion de projets & Logistique humanitaire
+    </p>
+    <b class=" " style="height: 20px;"></b>
+    <a href="#about"><b class=" btn">À Propos</b></a>
+
+
+  </header>
+
+
+<!-- Section: Brève Histoire -->
+<section id="about">
+    <div class="flex flex-col md:flex-row items-center justify-center max-w-4xl mx-auto p-4   shadow-black">
+        <div class="w-full md:w-45">
+            <img src="histo.jpg" alt="" class="w-full h-auto rounded-lg shadows-dark-lg ombee">
+        </div>
+        <div class="w-full md:w-50 text-start md:text-center p-4">
+            <h2 class="text-xl font-bold text-titre_1 font-size-lg">À Propos</h2>
+            <p class="text-gray-600 text-lg">
+                J’ai grandi à Goma, où j’ai développé un intérêt pour les sciences et les infrastructures. Cette passion m’a 
+                conduit à poursuivre des études en génie civil à l’Université Libre des Pays des Grands Lacs. En complément 
+                de mon parcours académique, j’ai acquis des compétences en gestion de projet, logistique et approvisionnement 
+                à travers des formations et des expériences professionnelles. Aujourd’hui, je m’investis activement dans des
+                 projets à fort impact dans le secteur humanitaire et du développement.
+
+            </p>
+        </div>
+    </div>
+</section>
+  <!-- Section: Compétences -->
+
+ 
+  <section>
+    <h2 class="text-2xl font-bold text-titre px-5 bg-white max-w-xl  bg-white p-5  shadow-lg  ">Compétences</h2>
+    <div class="grid grid-cols-1 md:grid-cols-4 gap-2 p-4">
+        <div class=" p-4 rounded-xl">
+            
+            <div class="flex flex-col  items-center justify-center max-w-4xl mx-auto p-4   shadows-lg bg-white p-8 rounded-lg shadow-lg">
+                
+                <div class="w-full md:w-50 text-start md:text-center p-4 ">
+                    <h4 class="text-lg  text-titre_1 font-size-lg">Gestion des achats et approvisionnement</h4>
+                    
+                </div>
+                <div class="w-full md:w-45">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="44" height="44" viewBox="0 0 24 24" style="fill: rgba(0, 0, 0, 1);"><path d="M20 6h-3V4c0-1.103-.897-2-2-2H9c-1.103 0-2 .897-2 2v2H4c-1.103 0-2 .897-2 2v3h20V8c0-1.103-.897-2-2-2zM9 4h6v2H9V4zm5 10h-4v-2H2v7c0 1.103.897 2 2 2h16c1.103 0 2-.897 2-2v-7h-8v2z"></path></svg>
+                      
+                </div>
+            </div>
+        </div>
+        <div class=" p-4 rounded-xl">
+        <div class="flex flex-col  items-center justify-center max-w-4xl mx-auto p-4   shadows-lg bg-white p-8 rounded-lg shadow-lg">
+            <div class="w-full md:w-50 text-start md:text-center p-4">
+                <h4 class="text-lg  text-titre_1 font-size-lg">Logistique humanitaire & gestion de projet</h4>
+            </div>
+            <div class="w-full md:w-45">
+                <svg xmlns="http://www.w3.org/2000/svg" width="44" height="44" viewBox="0 0 24 24" style="fill: rgba(0, 0, 0, 1);"><path d="M20 7h-4V4c0-1.103-.897-2-2-2h-4c-1.103 0-2 .897-2 2v5H4c-1.103 0-2 .897-2 2v9a1 1 0 0 0 1 1h18a1 1 0 0 0 1-1V9c0-1.103-.897-2-2-2zM4 11h4v8H4v-8zm6-1V4h4v15h-4v-9zm10 9h-4V9h4v10z"></path></svg>
+            </div>
+        </div>
+        </div>
+        <div class=" p-4 rounded-lg">
+        <div class="flex flex-col  items-center justify-center max-w-4xl mx-auto p-4   shadows-lg bg-white p-8 rounded-lg shadow-lg">
+            <div class="w-full md:w-50 text-start md:text-center p-4">
+                <h4 class="text-lg text-titre_1 font-size-lg">Analyse hydraulique et gestion des ressources</h4>
+               
+            </div>
+            <div class="w-full md:w-45">
+                <svg xmlns="http://www.w3.org/2000/svg" width="44" height="44" viewBox="0 0 24 24" style="fill: rgba(0, 0, 0, 1);"><path d="M5.996 9c1.413 0 2.16-.747 2.705-1.293.49-.49.731-.707 1.292-.707s.802.217 1.292.707C11.83 8.253 12.577 9 13.991 9c1.415 0 2.163-.747 2.71-1.293.491-.49.732-.707 1.295-.707s.804.217 1.295.707C19.837 8.253 20.585 9 22 9V7c-.563 0-.804-.217-1.295-.707C20.159 5.747 19.411 5 17.996 5s-2.162.747-2.709 1.292c-.491.491-.731.708-1.296.708-.562 0-.802-.217-1.292-.707C12.154 5.747 11.407 5 9.993 5s-2.161.747-2.706 1.293c-.49.49-.73.707-1.291.707s-.801-.217-1.291-.707C4.16 5.747 3.413 5 2 5v2c.561 0 .801.217 1.291.707C3.836 8.253 4.583 9 5.996 9zm0 5c1.413 0 2.16-.747 2.705-1.293.49-.49.731-.707 1.292-.707s.802.217 1.292.707c.545.546 1.292 1.293 2.706 1.293 1.415 0 2.163-.747 2.71-1.293.491-.49.732-.707 1.295-.707s.804.217 1.295.707C19.837 13.253 20.585 14 22 14v-2c-.563 0-.804-.217-1.295-.707-.546-.546-1.294-1.293-2.709-1.293s-2.162.747-2.709 1.292c-.491.491-.731.708-1.296.708-.562 0-.802-.217-1.292-.707C12.154 10.747 11.407 10 9.993 10s-2.161.747-2.706 1.293c-.49.49-.73.707-1.291.707s-.801-.217-1.291-.707C4.16 10.747 3.413 10 2 10v2c.561 0 .801.217 1.291.707C3.836 13.253 4.583 14 5.996 14zm0 5c1.413 0 2.16-.747 2.705-1.293.49-.49.731-.707 1.292-.707s.802.217 1.292.707c.545.546 1.292 1.293 2.706 1.293 1.415 0 2.163-.747 2.71-1.293.491-.49.732-.707 1.295-.707s.804.217 1.295.707C19.837 18.253 20.585 19 22 19v-2c-.563 0-.804-.217-1.295-.707-.546-.546-1.294-1.293-2.709-1.293s-2.162.747-2.709 1.292c-.491.491-.731.708-1.296.708-.562 0-.802-.217-1.292-.707C12.154 15.747 11.407 15 9.993 15s-2.161.747-2.706 1.293c-.49.49-.73.707-1.291.707s-.801-.217-1.291-.707C4.16 15.747 3.413 15 2 15v2c.561 0 .801.217 1.291.707C3.836 18.253 4.583 19 5.996 19z"></path></svg>            </div>
+        </div>
+        </div>
+        <div class=" p-4 rounded-xl">
+            <div class="flex flex-col  items-center justify-center max-w-4xl mx-auto p-4   shadows-lg bg-white p-8 rounded-lg shadow-lg">
+            
+                <div class="w-full md:w-50 text-start md:text-center p-4">
+                    <h4 class="text-lg  text-titre_1 ">Leadership, gestion d’équipe & négociation</h4>
+                   
+                </div>
+                <div class="w-full md:w-45">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="44" height="44" viewBox="0 0 24 24" style="fill: rgb(69, 65, 65);"><path d="M9.5 12c2.206 0 4-1.794 4-4s-1.794-4-4-4-4 1.794-4 4 1.794 4 4 4zm1.5 1H8c-3.309 0-6 2.691-6 6v1h15v-1c0-3.309-2.691-6-6-6z"></path><path d="M16.604 11.048a5.67 5.67 0 0 0 .751-3.44c-.179-1.784-1.175-3.361-2.803-4.44l-1.105 1.666c1.119.742 1.8 1.799 1.918 2.974a3.693 3.693 0 0 1-1.072 2.986l-1.192 1.192 1.618.475C18.951 13.701 19 17.957 19 18h2c0-1.789-.956-5.285-4.396-6.952z"></path></svg>                </div>
+            </div>
+        </div>
+    </div>
+  </section>
+   <!-- Section: Centres d’intérêt -->
+   <section class="max-w-xl bg-white p-5  shadow-lg mt-1">
+    <div class=" ">
+        <h2 class="text-2xl font-bold text-titre text-center">Centres d’intérêt</h2>
+      </div>
+</section>
+
+  <section class="">
+   
+    <div class="grid grid-cols-1 md:grid-cols-2 gap-2 p-4">
+        
+        <div class=" p-4 rounded-xl    grid grid-cols-1 md:grid-cols-2 gap-8  ">
+
+           <div class="p-2 rounded-lg bg-white">
+            <div class="w-full md:w-50 text-start md:text-center p-2">
+                <h4 class="text-lg  text-titre_1 font-bold"> Ingénierie et infrastructures</h4>
+               
+            </div>
+            <div class="w-full md:w-45">
+                <svg xmlns="http://www.w3.org/2000/svg" width="100" height="100" viewBox="0 0 24 24" style="fill: rgba(0, 0, 0, 1);"><path d="M18.649 16H5.352l-1.06 3H2v2h20v-2h-2.292zM6.057 14h11.886l-1.412-4H7.469zM13 2h-2a1 1 0 0 0-.943.667L8.175 8h7.65l-1.882-5.333A1 1 0 0 0 13 2z"></path></svg>
+        </div>
+           </div>
+        <div class=" p-4 rounded-xl    grid grid-cols-1 md:grid-cols-2 gap-8 ">
+
+            <div class="w-full md:w-50 text-start md:text-center p-4">
+                <h4 class="text-lg  text-titre_1 font-bold"> Hydraulique et gestion de l’eau</h4>
+               
+            </div>
+            <div class="w-full md:w-45">
+                <svg xmlns="http://www.w3.org/2000/svg" width="100" height="100" viewBox="0 0 24 24" style="fill: rgb(225, 150, 44);"><path d="M12.578 2.184a1.004 1.004 0 0 0-1.156 0C11.119 2.398 4 7.513 4 13.75 4 18.53 7.364 22 12 22s8-3.468 8-8.246c0-6.241-7.119-11.356-7.422-11.57zM6 13.75c0-4.283 4.395-8.201 6-9.49V20c-3.533 0-6-2.57-6-6.25z"></path></svg>            </div>
+        </div>
+        <div class=" p-4 rounded-xl    grid grid-cols-1 md:grid-cols-2 gap-8 ">
+
+            <div class="w-full md:w-50 text-start md:text-center p-4">
+                <h4 class="text-lg  text-titre_1 font-bold"> Développement humanitaire</h4>
+               
+            </div>
+            <div class="w-full md:w-45">
+                <svg xmlns="http://www.w3.org/2000/svg" width="100" height="100" viewBox="0 0 24 24" style="fill: rgba(0, 0, 0, 1);"><path d="M12 2C6.486 2 2 6.486 2 12s4.486 10 10 10 10-4.486 10-10S17.514 2 12 2zM4 12c0-.899.156-1.762.431-2.569L6 11l2 2v2l2 2 1 1v1.931C7.061 19.436 4 16.072 4 12zm14.33 4.873C17.677 16.347 16.687 16 16 16v-1a2 2 0 0 0-2-2h-4v-3a2 2 0 0 0 2-2V7h1a2 2 0 0 0 2-2v-.411C17.928 5.778 20 8.65 20 12a7.947 7.947 0 0 1-1.67 4.873z"></path></svg>            </div>
+        </div>
+            
+        
+       
+        
+        <div class="flex flex-col  items-center justify-center max-w-2xl mx-auto   p-2 rounded-lg bg-white">
+            <div class="w-full md:w-50 text-start md:text-center p-2">
+                <h4 class="text-lg  text-titre_1 font-bold">Entrepreneuriat et investissement</h4>
+            </div>
+            <div class="">
+                <svg xmlns="http://www.w3.org/2000/svg" width="100" height="100" viewBox="0 0 24 24" style="fill: rgb(225, 150, 44);"><path d="M20 6h-3V4c0-1.103-.897-2-2-2H9c-1.103 0-2 .897-2 2v2H4c-1.103 0-2 .897-2 2v11c0 1.103.897 2 2 2h16c1.103 0 2-.897 2-2V8c0-1.103-.897-2-2-2zm-5-2v2H9V4h6zM4 8h16v4h-3v-2h-2v2H9v-2H7v2H4V8zm0 11v-5h3v2h2v-2h6v2h2v-2h3.001v5H4z"></path></svg>            </div>
+        </div>
+        <div class="flex flex-col  items-center justify-center max-w-2xl mx-auto p-2   p-4 rounded-lg bg-white ">
+            <div class="w-full md:w-50 text-start md:text-center p-2">
+                <h4 class="text-lg  text-titre_1 font-bold">Basket & apprentissage des langues</h4>
+            </div>
+            <div class="">
+                <span>
+                    <svg xmlns="http://www.w3.org/2000/svg" width="100" height="100" viewBox="0 0 24 24" style="fill: rgba(0, 0, 0, 1);"><path d="M18.328 4.258a9.953 9.953 0 0 0-5.949-2.235 8.99 8.99 0 0 1-1.835 7.107L12 10.586l6.328-6.328zM7.701 9.115 4.258 5.672a9.938 9.938 0 0 0-2.112 4.704 7.007 7.007 0 0 0 5.555-1.261zm12.041-3.443L13.414 12l1.456 1.456a8.993 8.993 0 0 1 7.107-1.835 9.953 9.953 0 0 0-2.235-5.949zm2.112 7.952a7.007 7.007 0 0 0-5.555 1.261l3.443 3.443a9.924 9.924 0 0 0 2.112-4.704zM9.115 7.701a7.007 7.007 0 0 0 1.261-5.555 9.928 9.928 0 0 0-4.704 2.112l3.443 3.443zm4.509 14.153a9.936 9.936 0 0 0 4.704-2.111L14.885 16.3a7.003 7.003 0 0 0-1.261 5.554zM12 13.414l-6.328 6.328a9.953 9.953 0 0 0 5.949 2.235 8.99 8.99 0 0 1 1.835-7.107L12 13.414zm-7.742 4.914L10.586 12 9.13 10.544a8.993 8.993 0 0 1-7.107 1.835 9.953 9.953 0 0 0 2.235 5.949z"></path></svg>            
+                    <svg xmlns="http://www.w3.org/2000/svg" width="100" height="100" viewBox="0 0 24 24" style="fill: rgb(225, 150, 44);"><path d="M21 3h-7a2.98 2.98 0 0 0-2 .78A2.98 2.98 0 0 0 10 3H3a1 1 0 0 0-1 1v15a1 1 0 0 0 1 1h5.758c.526 0 1.042.214 1.414.586l1.121 1.121c.009.009.021.012.03.021.086.079.182.149.294.196h.002a.996.996 0 0 0 .762 0h.002c.112-.047.208-.117.294-.196.009-.009.021-.012.03-.021l1.121-1.121A2.015 2.015 0 0 1 15.242 20H21a1 1 0 0 0 1-1V4a1 1 0 0 0-1-1zM8.758 18H4V5h6c.552 0 1 .449 1 1v12.689A4.032 4.032 0 0 0 8.758 18zM20 18h-4.758c-.799 0-1.584.246-2.242.689V6c0-.551.448-1 1-1h6v13z"></path></svg>
+                </span>
+            </div>
+        </div>
+        </div>
+        <div class=" p-4 rounded-xl">
+        <div class="flex flex-col  items-center justify-center max-w-4xl mx-auto p-4 ">
+           
+            <div class="w-full md:w-45">
+                <img src="prena.jpg" alt="" class="w-full h-auto rounded-lg shadows-dark-lg">
+            </div>
+        </div>
+        </div>
+        
+    </div>
+  </section>
+
+
+  <!-- Section: Centres d’intérêt -->
+
+ 
+
+
+
+ 
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+  <!-- Section: Centres d’intérêt -->
+  <section class="max-w-xl mx-auto bg-white p-5 rounded-lg shadow-lg mt-8">
+  </section>
+
+  <!-- Section: Contact -->
+  <section class="max-w-3xl mx-auto bg-black p-8 rounded-lg shadow-lg mt-8">
+    <div class="flex items-center gap-2">
+      <svg class="w-6 h-6 text-accent" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M16 12h4m-4 0h-4m4 0v-4m0 4v4" />
+      </svg>
+      <h2 class="text-2xl font-bold text-primary bg-titre p-1 rounded-lg">Contact</h2>
+    </div>
+    <!-- Image représentative -->
+    <div class="space-y-4">
+      <div class="flex items-center gap-2 text-secondary">
+        <span>Email : <a href="mailto:victoirebulora@gmail.com" class="text-accent">victoirebulora@gmail.com</a></span>
+      </div>
+      <div class="flex items-center gap-2 text-secondary">
+        <span>LinkedIn : <a href="https://www.linkedin.com/in/victoire-bulora-6b9a62289?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=ios_app" class="text-accent">Voir Le Profil LinkedIn</a></span>
+      </div>
+      <div class="flex items-center gap-2 text-secondary">
+        <span>Numéro de téléphone : <span class="text-accent"> [+243 995 767 636]</span></span>
+      </div>
+      <div class="flex items-center gap-2 text-secondary">
+        <span>personne de référence </span>
+        <span>Email : <a href="mailto:finghoy@gmail.com" class="text-accent">finghoy@gmail.com</a></span>
+
+      </div>
+      <div class="flex items-center gap-2 text-secondary">
+        <span>Voir mon CV </span>
+        <span>: <a href="cv.pdf" class="text-accent" target="_blank">clique ici pour voir le CV</a></span>
+
+      </div>
+    </div>
+  </section>
+ 
+<section>
+    <marquee behavior="" direction="">
+        <div class="galerie">
+            <img src="1.jpg" alt="">
+            <img src="2.jpg" alt="">
+            <img src="3.jpg" alt="">
+            <img src="4.jpg" alt="">
+            <img src="5.jpg" alt="">
+            <img src="6.jpg" alt="">
+            <img src="7.jpg" alt="">
+        </div>
+    </marquee>
+</section>
+
+  <!-- Footer -->
+  <footer class="text-center text-white bg-primary py-6 mt-8" style="background-image: url('bg2.jpg'); height:10vh">
+    <p>© 2025 Victoire Bulora. Tous droits réservés.</p>
+    <p style="color: #464646;">Design by L6ix-Skyfall</p>
+  </footer>
+
+</body>
+</html>
