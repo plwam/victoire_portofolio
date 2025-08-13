@@ -1,0 +1,4 @@
+User-agent: *
+Disallow:
+
+Sitemap: https://plwam.github.io/victoire_portofolio/sitemap.xml
